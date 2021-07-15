@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+</head>
+<body>
+<form name="Pay" method="post" action="https://pay.piastrix.com/ru/pay" accept-charset="UTF-8">
+    <input type="hidden" name="amount" value="{{amount}}"/>
+    <input type="hidden" name="currency" value="{{currency}}"/>
+    <input type="hidden" name="shop_id" value="{{shop_id}}"/>
+    <input type="hidden" name="sign" value="{{sign}}"/>
+    <input type="hidden" name="shop_order_id" value="101"/>
+    <input type="submit"/>  </form>
+
+</body>
+</html>
